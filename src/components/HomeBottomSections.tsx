@@ -4,8 +4,17 @@ import { Search, Phone, Mail, MessageCircle, Star, Lightbulb, Users, HeartHandsh
 import { useTranslation } from "react-i18next";
 
 const HomeBottomSections = () => {
+  const [searchSubmitted, setSearchSubmitted] = useState(false);
+  const [postalCode, setPostalCode] = useState("");
   const { t } = useTranslation();
 
+  const mockOpportunities = [
+    { icon: Scale, title: t("home.opp.legalTitle"), location: "Amsterdam Centrum", distance: "1.2 km", slots: 3, urgent: true },
+    { icon: Heart, title: t("home.opp.buddyTitle"), location: "Amsterdam West", distance: "2.5 km", slots: 5, urgent: false },
+    { icon: GraduationCap, title: t("home.opp.dutchTitle"), location: "Amsterdam Zuid", distance: "3.1 km", slots: 2, urgent: false },
+    { icon: ShoppingCart, title: t("home.opp.groceryTitle"), location: "Amsterdam Oost", distance: "1.8 km", slots: 8, urgent: true },
+    { icon: Users, title: t("home.opp.youthTitle"), location: "Amsterdam Noord", distance: "4.2 km", slots: 1, urgent: false },
+  ];
   const signupSteps = [
     t("home.expertise"), t("home.availability"), t("home.languages"), t("home.location"), t("home.activities")
   ];
