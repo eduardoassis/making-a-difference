@@ -1,38 +1,41 @@
 import { useState } from "react";
 import { Scale, Users, ClipboardList, Heart, ShoppingCart, Home, GraduationCap, Monitor } from "lucide-react";
-
-const categories = [
-  { icon: Scale, label: "Legal" },
-  { icon: Users, label: "Social Work" },
-  { icon: ClipboardList, label: "Admin" },
-  { icon: Heart, label: "Buddy/Mentor" },
-  { icon: ShoppingCart, label: "Errands" },
-  { icon: Home, label: "Housing Help" },
-  { icon: GraduationCap, label: "Education" },
-  { icon: Monitor, label: "IT / Tech" },
-];
+import { useTranslation } from "react-i18next";
 
 const StepExpertise = () => {
-  const [selected, setSelected] = useState<string[]>(["Legal", "Buddy/Mentor"]);
+  const { t } = useTranslation();
 
-  const toggle = (label: string) => {
+  const categories = [
+    { icon: Scale, labelKey: "stepExpertise.legal" },
+    { icon: Users, labelKey: "stepExpertise.socialWork" },
+    { icon: ClipboardList, labelKey: "stepExpertise.admin" },
+    { icon: Heart, labelKey: "stepExpertise.buddyMentor" },
+    { icon: ShoppingCart, labelKey: "stepExpertise.errands" },
+    { icon: Home, labelKey: "stepExpertise.housingHelp" },
+    { icon: GraduationCap, labelKey: "stepExpertise.education" },
+    { icon: Monitor, labelKey: "stepExpertise.itTech" },
+  ];
+
+  const [selected, setSelected] = useState<string[]>([]);
+
+  const toggle = (key: string) => {
     setSelected((prev) =>
-      prev.includes(label) ? prev.filter((l) => l !== label) : [...prev, label]
+      prev.includes(key) ? prev.filter((l) => l !== key) : [...prev, key]
     );
   };
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-1">What are you good at?</h2>
-      <p className="text-sm text-muted-foreground mb-5">Select all that apply — you may choose more than one</p>
+      <h2 className="text-xl font-bold mb-1">{t("stepExpertise.title")}</h2>
+      <p className="text-sm text-muted-foreground mb-5">{t("stepExpertise.subtitle")}</p>
 
       <div className="grid grid-cols-2 gap-3">
         {categories.map((cat) => {
-          const isSelected = selected.includes(cat.label);
+          const isSelected = selected.includes(cat.labelKey);
           return (
             <button
-              key={cat.label}
-              onClick={() => toggle(cat.label)}
+              key={cat.labelKey}
+              onClick={() => toggle(cat.labelKey)}
               className={`flex items-center gap-3 p-4 rounded-xl border-2 transition-all min-h-[56px] ${
                 isSelected
                   ? "border-primary bg-accent"
@@ -49,7 +52,7 @@ const StepExpertise = () => {
                 )}
               </div>
               <cat.icon className="w-4 h-4 text-foreground/70 flex-shrink-0" />
-              <span className="text-sm font-medium text-foreground">{cat.label}</span>
+              <span className="text-sm font-medium text-foreground">{t(cat.labelKey)}</span>
             </button>
           );
         })}
