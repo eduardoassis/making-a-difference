@@ -21,8 +21,8 @@ const StickyHeader = () => {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b shadow-sm">
       <div className="max-w-[420px] mx-auto flex items-center justify-between px-4 h-14">
-        <Link to="/" className="font-display font-bold text-lg text-secondary">
-          VluchtelingenWerk
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="VluchtelingenWerk Nederland" className="h-8 w-auto" />
         </Link>
 
         <div className="flex items-center gap-2">
