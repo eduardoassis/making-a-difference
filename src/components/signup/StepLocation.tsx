@@ -15,6 +15,7 @@ const StepLocation = () => {
   ];
 
   const [postalCode, setPostalCode] = useState("");
+  const [postalError, setPostalError] = useState("");
   const [distance, setDistance] = useState(10);
   const [activitySearch, setActivitySearch] = useState("");
   const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
