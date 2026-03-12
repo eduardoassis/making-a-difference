@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Search } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import FakeMap from "../FakeMap";
 
 const StepLocation = () => {
   const { t } = useTranslation();
