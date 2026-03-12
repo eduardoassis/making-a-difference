@@ -180,7 +180,8 @@
     "languageHelp": "Aide linguistique",
     "admin": "Administration",
     "sports": "Sport",
-    "mapPreview": "Aperçu carte — opportunités de bénévolat près de chez vous"
+    "mapPreview": "Aperçu carte — opportunités de bénévolat près de chez vous",
+    "postalError": "Veuillez entrer un code postal néerlandais valide (ex. 1011 AB)"
   },
   "notFound": {
     "title": "404",
