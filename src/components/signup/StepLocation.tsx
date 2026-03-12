@@ -32,16 +32,27 @@ const StepLocation = () => {
 
       <div className="mb-5">
         <h3 className="text-sm font-semibold mb-2">{t("stepLocation.postalCode")}</h3>
-        <div className="flex items-center gap-2 bg-muted rounded-lg px-3 py-2.5">
+        <div className={`flex items-center gap-2 bg-muted rounded-lg px-3 py-2.5 ${postalError ? "ring-2 ring-destructive" : ""}`}>
           <MapPin className="w-4 h-4 text-muted-foreground" />
           <input
             type="text"
             value={postalCode}
-            onChange={(e) => setPostalCode(e.target.value)}
+            onChange={(e) => {
+              setPostalCode(e.target.value);
+              if (postalError) setPostalError("");
+            }}
+            onBlur={() => {
+              if (postalCode && !/^\d{4}\s?[A-Za-z]{2}$/.test(postalCode)) {
+                setPostalError(t("stepLocation.postalError"));
+              }
+            }}
             placeholder={t("stepLocation.postalPlaceholder")}
             className="bg-transparent text-sm w-full outline-none text-foreground placeholder:text-muted-foreground"
           />
         </div>
+        {postalError && (
+          <p className="text-xs text-destructive mt-1">{postalError}</p>
+        )}
       </div>
 
       <div className="mb-5">

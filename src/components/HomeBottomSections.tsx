@@ -166,23 +166,7 @@ const HomeBottomSections = () => {
         </AnimatePresence>
       </div>
 
-      <div>
-        <h3 className="font-bold text-base mb-3">{t("home.volunteersSay")}</h3>
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="bg-card rounded-xl p-5 border shadow-sm"
-        >
-          <p className="text-sm text-foreground italic mb-3">{t("home.testimonial")}</p>
-          <p className="text-xs text-muted-foreground font-medium">{t("home.testimonialAuthor")}</p>
-        </motion.div>
-        <div className="flex justify-center gap-1.5 mt-3">
-          <span className="w-2 h-2 rounded-full bg-primary" />
-          <span className="w-2 h-2 rounded-full bg-border" />
-          <span className="w-2 h-2 rounded-full bg-border" />
-        </div>
-      </div>
+      <TestimonialCarousel />
 
       <div>
         <h3 className="font-bold text-base mb-3">{t("home.whyVolunteer")}</h3>
