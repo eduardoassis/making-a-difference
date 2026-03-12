@@ -1,10 +1,20 @@
-import { motion } from "framer-motion";
-import { Search, Phone, Mail, MessageCircle, Star, Lightbulb, Users, HeartHandshake } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, Phone, Mail, MessageCircle, Star, Lightbulb, Users, HeartHandshake, MapPin, Clock, Scale, GraduationCap, ShoppingCart, Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const HomeBottomSections = () => {
+  const [searchSubmitted, setSearchSubmitted] = useState(false);
+  const [postalCode, setPostalCode] = useState("");
   const { t } = useTranslation();
 
+  const mockOpportunities = [
+    { icon: Scale, title: t("home.opp.legalTitle"), location: "Amsterdam Centrum", distance: "1.2 km", slots: 3, urgent: true },
+    { icon: Heart, title: t("home.opp.buddyTitle"), location: "Amsterdam West", distance: "2.5 km", slots: 5, urgent: false },
+    { icon: GraduationCap, title: t("home.opp.dutchTitle"), location: "Amsterdam Zuid", distance: "3.1 km", slots: 2, urgent: false },
+    { icon: ShoppingCart, title: t("home.opp.groceryTitle"), location: "Amsterdam Oost", distance: "1.8 km", slots: 8, urgent: true },
+    { icon: Users, title: t("home.opp.youthTitle"), location: "Amsterdam Noord", distance: "4.2 km", slots: 1, urgent: false },
+  ];
   const signupSteps = [
     t("home.expertise"), t("home.availability"), t("home.languages"), t("home.location"), t("home.activities")
   ];
@@ -31,15 +41,77 @@ const HomeBottomSections = () => {
 
       <div className="bg-card rounded-xl p-5 border shadow-sm">
         <h3 className="font-bold text-base mb-2">{t("home.findNearYou")}</h3>
-        <div className="flex gap-2">
+        <div className="flex gap-2 mb-1">
           <div className="flex-1 flex items-center gap-2 bg-muted rounded-lg px-3 py-2.5">
             <Search className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">{t("home.postalPlaceholder")}</span>
+            <input
+              type="text"
+              value={postalCode}
+              onChange={(e) => setPostalCode(e.target.value)}
+              placeholder={t("home.postalPlaceholder")}
+              className="bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none w-full"
+            />
           </div>
-          <button className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm">
+          <button
+            onClick={() => setSearchSubmitted(true)}
+            className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm"
+          >
             {t("home.search")}
           </button>
         </div>
+
+        <AnimatePresence>
+          {searchSubmitted && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="mt-4 space-y-3"
+            >
+              <p className="text-xs text-muted-foreground font-medium">
+                {t("home.opp.resultsFound", { count: mockOpportunities.length, postal: postalCode || "1011 AB" })}
+              </p>
+              {mockOpportunities.map((opp, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.08 }}
+                  className="flex items-start gap-3 p-3 rounded-lg border bg-background hover:border-primary/40 transition-colors cursor-pointer"
+                >
+                  <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+                    <opp.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-semibold text-foreground truncate">{opp.title}</span>
+                      {opp.urgent && (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-destructive/10 text-destructive flex-shrink-0">
+                          {t("home.opp.urgent")}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-3 mt-1">
+                      <span className="text-xs text-muted-foreground flex items-center gap-1">
+                        <MapPin className="w-3 h-3" /> {opp.location}
+                      </span>
+                      <span className="text-xs text-muted-foreground flex items-center gap-1">
+                        <Clock className="w-3 h-3" /> {opp.distance}
+                      </span>
+                    </div>
+                    <p className="text-xs text-primary/80 font-medium mt-1">
+                      {t("home.opp.slotsAvailable", { count: opp.slots })}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+              <button className="w-full text-center text-sm font-semibold text-primary py-2 rounded-lg border border-primary/20 hover:bg-accent transition-colors">
+                {t("home.opp.viewAll")}
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <div>

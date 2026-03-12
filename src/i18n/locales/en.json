@@ -44,7 +44,18 @@
     "contactUs": "Questions? Contact us",
     "phone": "Phone",
     "email": "Email",
-    "chat": "Chat"
+    "chat": "Chat",
+    "opp": {
+      "legalTitle": "Legal aid for asylum procedures",
+      "buddyTitle": "Buddy for new family",
+      "dutchTitle": "Dutch lessons for beginners",
+      "groceryTitle": "Grocery help for elderly",
+      "youthTitle": "Youth mentorship programme",
+      "resultsFound": "{{count}} opportunities found near {{postal}}",
+      "urgent": "Urgent",
+      "slotsAvailable": "{{count}} slots available",
+      "viewAll": "View all opportunities →"
+    }
   },
   "whatWeDo": {
     "title": "What Do We Do?",

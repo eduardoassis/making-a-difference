@@ -44,7 +44,18 @@
     "contactUs": "¿Preguntas? Contáctanos",
     "phone": "Teléfono",
     "email": "Correo",
-    "chat": "Chat"
+    "chat": "Chat",
+    "opp": {
+      "legalTitle": "Ayuda legal para procedimientos de asilo",
+      "buddyTitle": "Amigo para nueva familia",
+      "dutchTitle": "Clases de neerlandés para principiantes",
+      "groceryTitle": "Ayuda con compras para mayores",
+      "youthTitle": "Programa de mentoría juvenil",
+      "resultsFound": "{{count}} oportunidades encontradas cerca de {{postal}}",
+      "urgent": "Urgente",
+      "slotsAvailable": "{{count}} plazas disponibles",
+      "viewAll": "Ver todas las oportunidades →"
+    }
   },
   "whatWeDo": {
     "title": "¿Qué hacemos?",

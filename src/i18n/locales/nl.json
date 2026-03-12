@@ -44,7 +44,18 @@
     "contactUs": "Vragen? Neem contact op",
     "phone": "Telefoon",
     "email": "E-mail",
-    "chat": "Chat"
+    "chat": "Chat",
+    "opp": {
+      "legalTitle": "Juridische hulp bij asielprocedures",
+      "buddyTitle": "Buddy voor nieuw gezin",
+      "dutchTitle": "Nederlandse les voor beginners",
+      "groceryTitle": "Boodschappenhulp voor ouderen",
+      "youthTitle": "Jongerenmentorprogramma",
+      "resultsFound": "{{count}} kansen gevonden bij {{postal}}",
+      "urgent": "Urgent",
+      "slotsAvailable": "{{count}} plekken beschikbaar",
+      "viewAll": "Bekijk alle kansen →"
+    }
   },
   "whatWeDo": {
     "title": "Wat doen wij?",
