@@ -112,7 +112,7 @@ const StepLocation = () => {
           { lat: 52.3784, lng: 4.8900, label: t("stepLocation.buddy") },
           { lat: 52.3600, lng: 4.9300, label: t("stepLocation.languageHelp") },
         ]}
-      />
+    </div>
   );
 };
 
