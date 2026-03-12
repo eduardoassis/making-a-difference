@@ -78,7 +78,7 @@ const Signup = () => {
               onClick={next}
               className="block w-full mt-6 py-4 rounded-xl bg-primary text-primary-foreground text-center font-bold text-base"
             >
-              {step < 3 ? t("signup.next", { step: stepLabels[step + 1] }) : t("signup.createProfile")}
+              {step < 4 ? t("signup.next", { step: stepLabels[step + 1] }) : t("signup.createProfile")}
             </button>
           </>
         ) : (
