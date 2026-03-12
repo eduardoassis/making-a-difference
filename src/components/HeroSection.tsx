@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Heart, Users, Scale, HandHelping } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import heroImage from "@/assets/hero-image.png";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -24,13 +25,14 @@ const HeroSection = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="rounded-2xl p-6 text-center"
-        style={{ background: "var(--hero-gradient)" }}
+        className="rounded-2xl overflow-hidden text-center relative"
       >
-        <div className="text-primary-foreground/70 text-sm mb-2">{t("hero.placeholder")}</div>
-        <h1 className="text-2xl font-bold text-primary-foreground leading-tight mb-4 whitespace-pre-line">
-          {t("hero.title")}
-        </h1>
+        <img src={heroImage} alt={t("hero.title")} className="w-full h-48 object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+          <h1 className="text-2xl font-bold text-white leading-tight mb-1 whitespace-pre-line">
+            {t("hero.title")}
+          </h1>
+        </div>
       </motion.div>
 
       <Link
