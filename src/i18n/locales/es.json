@@ -83,10 +83,23 @@
     "allSet": "¡Todo listo!",
     "allSetDesc": "Revisaremos tu perfil y te emparejaremos con el equipo adecuado.",
     "backToHome": "Volver al inicio",
+    "contact": "Contacto",
     "expertise": "Experiencia",
     "availability": "Disponibilidad",
     "languages": "Idiomas",
     "locationLabel": "Ubicación"
+  },
+  "stepContact": {
+    "title": "Tus datos de contacto",
+    "subtitle": "Completa tus datos para que podamos comunicarnos contigo",
+    "firstName": "Nombre",
+    "firstNamePlaceholder": "ej. Juan",
+    "lastName": "Apellido",
+    "lastNamePlaceholder": "ej. García",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "ej. juan@ejemplo.com",
+    "phone": "Número de teléfono",
+    "phonePlaceholder": "ej. 06-12345678"
   },
   "stepExpertise": {
     "title": "¿En qué eres bueno?",

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import StickyHeader from "@/components/StickyHeader";
 import MobileFrame from "@/components/MobileFrame";
+import StepContact from "@/components/signup/StepContact";
 import StepExpertise from "@/components/signup/StepExpertise";
 import StepAvailability from "@/components/signup/StepAvailability";
 import StepLanguages from "@/components/signup/StepLanguages";
@@ -16,11 +17,11 @@ const Signup = () => {
   const { t } = useTranslation();
 
   const stepLabels = [
-    t("signup.expertise"), t("signup.availability"), t("signup.languages"), t("signup.locationLabel")
+    t("signup.contact"), t("signup.expertise"), t("signup.availability"), t("signup.languages"), t("signup.locationLabel")
   ];
 
   const next = () => {
-    if (step < 3) setStep(step + 1);
+    if (step < 4) setStep(step + 1);
     else setCompleted(true);
   };
   const back = () => {
@@ -44,7 +45,7 @@ const Signup = () => {
                 </Link>
               )}
               <span className="text-sm text-muted-foreground font-medium">
-                {t("signup.stepOf", { current: step + 1, total: 4 })}
+                {t("signup.stepOf", { current: step + 1, total: 5 })}
               </span>
             </div>
 
@@ -65,10 +66,11 @@ const Signup = () => {
                 exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.2 }}
               >
-                {step === 0 && <StepExpertise />}
-                {step === 1 && <StepAvailability />}
-                {step === 2 && <StepLanguages />}
-                {step === 3 && <StepLocation />}
+                {step === 0 && <StepContact />}
+                {step === 1 && <StepExpertise />}
+                {step === 2 && <StepAvailability />}
+                {step === 3 && <StepLanguages />}
+                {step === 4 && <StepLocation />}
               </motion.div>
             </AnimatePresence>
 
@@ -76,7 +78,7 @@ const Signup = () => {
               onClick={next}
               className="block w-full mt-6 py-4 rounded-xl bg-primary text-primary-foreground text-center font-bold text-base"
             >
-              {step < 3 ? t("signup.next", { step: stepLabels[step + 1] }) : t("signup.createProfile")}
+              {step < 4 ? t("signup.next", { step: stepLabels[step + 1] }) : t("signup.createProfile")}
             </button>
           </>
         ) : (
