@@ -12,8 +12,18 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+      body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
+        "dark-bg": "hsl(var(--dark-bg))",
+        "dark-card": "hsl(var(--dark-card))",
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
