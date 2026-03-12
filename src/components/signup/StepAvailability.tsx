@@ -1,17 +1,35 @@
 import { useState } from "react";
-
-const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-const times = [
-  { label: "Morning", sub: "7 – 12" },
-  { label: "Afternoon", sub: "12 – 17" },
-  { label: "Evening", sub: "17 – 21" },
-];
-const frequencies = ["Weekly", "Bi-weekly", "Monthly", "Flexible"];
+import { useTranslation } from "react-i18next";
 
 const StepAvailability = () => {
-  const [selectedDays, setSelectedDays] = useState<string[]>(["Mon", "Wed", "Fri"]);
-  const [selectedTimes, setSelectedTimes] = useState<string[]>(["Morning", "Afternoon"]);
-  const [frequency, setFrequency] = useState("Flexible");
+  const { t } = useTranslation();
+
+  const days = [
+    { key: "mon", label: t("stepAvailability.mon") },
+    { key: "tue", label: t("stepAvailability.tue") },
+    { key: "wed", label: t("stepAvailability.wed") },
+    { key: "thu", label: t("stepAvailability.thu") },
+    { key: "fri", label: t("stepAvailability.fri") },
+    { key: "sat", label: t("stepAvailability.sat") },
+    { key: "sun", label: t("stepAvailability.sun") },
+  ];
+
+  const times = [
+    { key: "morning", label: t("stepAvailability.morning"), sub: "7 – 12" },
+    { key: "afternoon", label: t("stepAvailability.afternoon"), sub: "12 – 17" },
+    { key: "evening", label: t("stepAvailability.evening"), sub: "17 – 21" },
+  ];
+
+  const frequencies = [
+    { key: "weekly", label: t("stepAvailability.weekly") },
+    { key: "biWeekly", label: t("stepAvailability.biWeekly") },
+    { key: "monthly", label: t("stepAvailability.monthly") },
+    { key: "flexible", label: t("stepAvailability.flexible") },
+  ];
+
+  const [selectedDays, setSelectedDays] = useState<string[]>([]);
+  const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
+  const [frequency, setFrequency] = useState("flexible");
   const [weekends, setWeekends] = useState(true);
 
   const toggleDay = (d: string) =>
@@ -21,78 +39,72 @@ const StepAvailability = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-1">When are you available?</h2>
-      <p className="text-sm text-muted-foreground mb-5">Tap to select days, time blocks, and frequency</p>
+      <h2 className="text-xl font-bold mb-1">{t("stepAvailability.title")}</h2>
+      <p className="text-sm text-muted-foreground mb-5">{t("stepAvailability.subtitle")}</p>
 
-      {/* Days */}
       <div className="mb-5">
-        <h3 className="text-sm font-semibold mb-2">Days</h3>
+        <h3 className="text-sm font-semibold mb-2">{t("stepAvailability.days")}</h3>
         <div className="flex gap-1.5">
           {days.map((d) => (
             <button
-              key={d}
-              onClick={() => toggleDay(d)}
+              key={d.key}
+              onClick={() => toggleDay(d.key)}
               className={`flex-1 py-2.5 rounded-lg text-xs font-semibold transition-colors ${
-                selectedDays.includes(d)
+                selectedDays.includes(d.key)
                   ? "bg-primary text-primary-foreground"
                   : "bg-muted text-muted-foreground"
               }`}
             >
-              {d}
+              {d.label}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Time Blocks */}
       <div className="mb-5">
-        <h3 className="text-sm font-semibold mb-2">Time of day</h3>
+        <h3 className="text-sm font-semibold mb-2">{t("stepAvailability.timeOfDay")}</h3>
         <div className="grid grid-cols-3 gap-2">
-          {times.map((t) => (
+          {times.map((tm) => (
             <button
-              key={t.label}
-              onClick={() => toggleTime(t.label)}
+              key={tm.key}
+              onClick={() => toggleTime(tm.key)}
               className={`py-3 rounded-xl border-2 text-center transition-colors ${
-                selectedTimes.includes(t.label)
+                selectedTimes.includes(tm.key)
                   ? "border-primary bg-accent"
                   : "border-border"
               }`}
             >
-              <div className="text-sm font-semibold">{t.label}</div>
-              <div className="text-xs text-muted-foreground">{t.sub}</div>
+              <div className="text-sm font-semibold">{tm.label}</div>
+              <div className="text-xs text-muted-foreground">{tm.sub}</div>
             </button>
           ))}
         </div>
       </div>
 
-      {/* Frequency */}
       <div className="mb-5">
-        <h3 className="text-sm font-semibold mb-2">Frequency</h3>
+        <h3 className="text-sm font-semibold mb-2">{t("stepAvailability.frequency")}</h3>
         <div className="flex gap-2 flex-wrap">
           {frequencies.map((f) => (
             <button
-              key={f}
-              onClick={() => setFrequency(f)}
+              key={f.key}
+              onClick={() => setFrequency(f.key)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
-                frequency === f
+                frequency === f.key
                   ? "bg-primary text-primary-foreground"
                   : "bg-muted text-muted-foreground"
               }`}
             >
-              {f}
+              {f.label}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Weekend Toggle */}
       <div className="flex items-center justify-between bg-card border rounded-xl p-4">
-        <span className="text-sm font-medium">Also available on weekends?</span>
+        <span className="text-sm font-medium">{t("stepAvailability.weekends")}</span>
         <button
           onClick={() => setWeekends(!weekends)}
-          className={`relative w-12 h-7 rounded-full transition-colors ${
-            weekends ? "bg-primary" : "bg-border"
-          }`}
+          className={`relative w-12 h-7 rounded-full transition-colors ${weekends ? "bg-primary" : "bg-border"}`}
         >
           <div
             className={`absolute top-0.5 w-6 h-6 rounded-full bg-card shadow transition-transform ${

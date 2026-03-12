@@ -1,21 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.png";
 
 const languages = ["NL", "EN", "ES", "AR", "UA"];
 
 const StickyHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState("NL");
   const [langOpen, setLangOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
+
+  const currentLang = i18n.language;
+
+  const changeLang = (l: string) => {
+    i18n.changeLanguage(l);
+    setLangOpen(false);
+  };
+
+  // Set RTL direction for Arabic
+  useEffect(() => {
+    document.documentElement.dir = currentLang === "AR" ? "rtl" : "ltr";
+    document.documentElement.lang = currentLang.toLowerCase();
+  }, [currentLang]);
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/what-we-do", label: "What do we do?" },
-    { to: "/more-info", label: "More information" },
-    { to: "/signup", label: "Sign Up" },
+    { to: "/", label: t("nav.home") },
+    { to: "/what-we-do", label: t("nav.whatWeDo") },
+    { to: "/more-info", label: t("nav.moreInfo") },
+    { to: "/signup", label: t("nav.signup") },
   ];
 
   return (
@@ -32,15 +46,15 @@ const StickyHeader = () => {
               className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground px-2 py-1 rounded-md border"
             >
               <Globe className="w-4 h-4" />
-              {lang}
+              {currentLang}
             </button>
             {langOpen && (
-              <div className="absolute right-0 top-full mt-1 bg-card border rounded-lg shadow-lg py-1 min-w-[80px]">
+              <div className="absolute right-0 top-full mt-1 bg-card border rounded-lg shadow-lg py-1 min-w-[80px] rtl:right-auto rtl:left-0">
                 {languages.map((l) => (
                   <button
                     key={l}
-                    onClick={() => { setLang(l); setLangOpen(false); }}
-                    className={`block w-full text-left px-3 py-1.5 text-sm hover:bg-accent ${l === lang ? 'text-primary font-semibold' : 'text-foreground'}`}
+                    onClick={() => changeLang(l)}
+                    className={`block w-full text-left rtl:text-right px-3 py-1.5 text-sm hover:bg-accent ${l === currentLang ? 'text-primary font-semibold' : 'text-foreground'}`}
                   >
                     {l}
                   </button>
