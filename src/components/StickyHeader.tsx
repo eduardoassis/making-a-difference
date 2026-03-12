@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const languages = ["NL", "EN", "ES", "AR", "UA"];
 
