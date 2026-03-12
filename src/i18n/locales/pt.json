@@ -180,7 +180,8 @@
     "languageHelp": "Ajuda com idioma",
     "admin": "Administração",
     "sports": "Esportes",
-    "mapPreview": "Pré-visualização do mapa — oportunidades de voluntariado perto de você"
+    "mapPreview": "Pré-visualização do mapa — oportunidades de voluntariado perto de você",
+    "postalError": "Insira um código postal holandês válido (ex. 1011 AB)"
   },
   "notFound": {
     "title": "404",

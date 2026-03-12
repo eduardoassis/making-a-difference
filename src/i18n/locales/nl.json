@@ -180,7 +180,8 @@
     "languageHelp": "Taalhulp",
     "admin": "Administratie",
     "sports": "Sport",
-    "mapPreview": "Kaartvoorbeeld — vrijwilligerskansen bij jou in de buurt"
+    "mapPreview": "Kaartvoorbeeld — vrijwilligerskansen bij jou in de buurt",
+    "postalError": "Vul een geldige Nederlandse postcode in (bijv. 1011 AB)"
   },
   "notFound": {
     "title": "404",

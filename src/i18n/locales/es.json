@@ -180,7 +180,8 @@
     "languageHelp": "Ayuda con idioma",
     "admin": "Administración",
     "sports": "Deportes",
-    "mapPreview": "Vista previa del mapa — oportunidades de voluntariado cerca de ti"
+    "mapPreview": "Vista previa del mapa — oportunidades de voluntariado cerca de ti",
+    "postalError": "Introduce un código postal neerlandés válido (ej. 1011 AB)"
   },
   "notFound": {
     "title": "404",

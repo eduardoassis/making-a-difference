@@ -180,7 +180,8 @@
     "languageHelp": "Language help",
     "admin": "Admin",
     "sports": "Sports",
-    "mapPreview": "Map preview — volunteer opportunities near you"
+    "mapPreview": "Map preview — volunteer opportunities near you",
+    "postalError": "Please enter a valid Dutch postal code (e.g. 1011 AB)"
   },
   "notFound": {
     "title": "404",
