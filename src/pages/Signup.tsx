@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import StickyHeader from "@/components/StickyHeader";
 import MobileFrame from "@/components/MobileFrame";
+import StepContact from "@/components/signup/StepContact";
 import StepExpertise from "@/components/signup/StepExpertise";
 import StepAvailability from "@/components/signup/StepAvailability";
 import StepLanguages from "@/components/signup/StepLanguages";
@@ -16,11 +17,11 @@ const Signup = () => {
   const { t } = useTranslation();
 
   const stepLabels = [
-    t("signup.expertise"), t("signup.availability"), t("signup.languages"), t("signup.locationLabel")
+    t("signup.contact"), t("signup.expertise"), t("signup.availability"), t("signup.languages"), t("signup.locationLabel")
   ];
 
   const next = () => {
-    if (step < 3) setStep(step + 1);
+    if (step < 4) setStep(step + 1);
     else setCompleted(true);
   };
   const back = () => {
