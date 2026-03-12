@@ -36,7 +36,7 @@ const StepExpertise = () => {
             <button
               key={cat.labelKey}
               onClick={() => toggle(cat.labelKey)}
-              className={`flex items-center gap-3 p-4 rounded-xl border-2 transition-all min-h-[56px] overflow-hidden ${
+              className={`flex items-center gap-2 px-3 py-3 rounded-xl border-2 transition-all min-h-[56px] ${
                 isSelected
                   ? "border-primary bg-accent"
                   : "border-border bg-card hover:border-primary/40"
@@ -52,7 +52,7 @@ const StepExpertise = () => {
                 )}
               </div>
               <cat.icon className="w-4 h-4 text-foreground/70 flex-shrink-0" />
-              <span className="text-sm font-medium text-foreground truncate">{t(cat.labelKey)}</span>
+              <span className="text-xs font-medium text-foreground text-left leading-tight">{t(cat.labelKey)}</span>
             </button>
           );
         })}
