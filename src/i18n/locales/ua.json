@@ -83,10 +83,23 @@
     "allSet": "Все готово!",
     "allSetDesc": "Ми переглянемо ваш профіль і підберемо вам відповідну команду.",
     "backToHome": "На головну",
+    "contact": "Контактні дані",
     "expertise": "Експертиза",
     "availability": "Доступність",
     "languages": "Мови",
     "locationLabel": "Місцезнаходження"
+  },
+  "stepContact": {
+    "title": "Ваші контактні дані",
+    "subtitle": "Заповніть свої дані, щоб ми могли з вами зв'язатися",
+    "firstName": "Ім'я",
+    "firstNamePlaceholder": "напр. Олександр",
+    "lastName": "Прізвище",
+    "lastNamePlaceholder": "напр. Шевченко",
+    "email": "Електронна пошта",
+    "emailPlaceholder": "напр. oleksandr@example.com",
+    "phone": "Номер телефону",
+    "phonePlaceholder": "напр. 06-12345678"
   },
   "stepExpertise": {
     "title": "В чому ви хороші?",

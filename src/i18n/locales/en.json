@@ -83,10 +83,23 @@
     "allSet": "You're all set!",
     "allSetDesc": "We'll review your profile and match you with the right team.",
     "backToHome": "Back to Home",
+    "contact": "Contact",
     "expertise": "Expertise",
     "availability": "Availability",
     "languages": "Languages",
     "locationLabel": "Location"
+  },
+  "stepContact": {
+    "title": "Your contact details",
+    "subtitle": "Fill in your details so we can get in touch with you",
+    "firstName": "First name",
+    "firstNamePlaceholder": "e.g. John",
+    "lastName": "Last name",
+    "lastNamePlaceholder": "e.g. Smith",
+    "email": "Email address",
+    "emailPlaceholder": "e.g. john@example.com",
+    "phone": "Phone number",
+    "phonePlaceholder": "e.g. 06-12345678"
   },
   "stepExpertise": {
     "title": "What are you good at?",

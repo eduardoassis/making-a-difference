@@ -83,10 +83,23 @@
     "allSet": "أنت جاهز تماماً!",
     "allSetDesc": "سنراجع ملفك الشخصي ونطابقك مع الفريق المناسب.",
     "backToHome": "العودة للرئيسية",
+    "contact": "بيانات الاتصال",
     "expertise": "الخبرة",
     "availability": "التوفر",
     "languages": "اللغات",
     "locationLabel": "الموقع"
+  },
+  "stepContact": {
+    "title": "بيانات الاتصال الخاصة بك",
+    "subtitle": "أدخل بياناتك حتى نتمكن من التواصل معك",
+    "firstName": "الاسم الأول",
+    "firstNamePlaceholder": "مثال: أحمد",
+    "lastName": "اسم العائلة",
+    "lastNamePlaceholder": "مثال: محمد",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "مثال: ahmed@example.com",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "مثال: 06-12345678"
   },
   "stepExpertise": {
     "title": "ما الذي تجيده؟",

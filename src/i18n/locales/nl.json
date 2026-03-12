@@ -83,10 +83,23 @@
     "allSet": "Je bent helemaal klaar!",
     "allSetDesc": "We beoordelen je profiel en koppelen je aan het juiste team.",
     "backToHome": "Terug naar Home",
+    "contact": "Contactgegevens",
     "expertise": "Expertise",
     "availability": "Beschikbaarheid",
     "languages": "Talen",
     "locationLabel": "Locatie"
+  },
+  "stepContact": {
+    "title": "Je contactgegevens",
+    "subtitle": "Vul je gegevens in zodat we contact met je kunnen opnemen",
+    "firstName": "Voornaam",
+    "firstNamePlaceholder": "bijv. Jan",
+    "lastName": "Achternaam",
+    "lastNamePlaceholder": "bijv. de Vries",
+    "email": "E-mailadres",
+    "emailPlaceholder": "bijv. jan@voorbeeld.nl",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "bijv. 06-12345678"
   },
   "stepExpertise": {
     "title": "Waar ben je goed in?",
