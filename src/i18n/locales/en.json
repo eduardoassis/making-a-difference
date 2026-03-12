@@ -36,6 +36,10 @@
     "volunteersSay": "What volunteers say",
     "testimonial": "\"Volunteering changed my life. I've met incredible people and learned so much about resilience.\"",
     "testimonialAuthor": "— Maria, Buddy volunteer, Amsterdam",
+    "testimonial2": "\"I started as a language buddy and now I coordinate a whole team. The support from the organisation is amazing.\"",
+    "testimonialAuthor2": "— Ahmed, Language coach, Rotterdam",
+    "testimonial3": "\"Every week I help with groceries for elderly refugees. It's a small thing but it means so much to them — and to me.\"",
+    "testimonialAuthor3": "— Sophie, Grocery volunteer, Utrecht",
     "whyVolunteer": "Why volunteer with us?",
     "makeImpact": "Make impact",
     "expandSkills": "Expand skills",
@@ -176,7 +180,8 @@
     "languageHelp": "Language help",
     "admin": "Admin",
     "sports": "Sports",
-    "mapPreview": "Map preview — volunteer opportunities near you"
+    "mapPreview": "Map preview — volunteer opportunities near you",
+    "postalError": "Please enter a valid Dutch postal code (e.g. 1011 AB)"
   },
   "notFound": {
     "title": "404",

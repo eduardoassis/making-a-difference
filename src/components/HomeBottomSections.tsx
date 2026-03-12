@@ -1,7 +1,59 @@
-import { useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Phone, Mail, MessageCircle, Star, Lightbulb, Users, HeartHandshake, MapPin, Clock, Scale, GraduationCap, ShoppingCart, Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import useEmblaCarousel from "embla-carousel-react";
+
+const TestimonialCarousel = () => {
+  const { t } = useTranslation();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const testimonials = [
+    { text: t("home.testimonial"), author: t("home.testimonialAuthor") },
+    { text: t("home.testimonial2"), author: t("home.testimonialAuthor2") },
+    { text: t("home.testimonial3"), author: t("home.testimonialAuthor3") },
+  ];
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => { emblaApi.off("select", onSelect); };
+  }, [emblaApi, onSelect]);
+
+  return (
+    <div>
+      <h3 className="font-bold text-base mb-3">{t("home.volunteersSay")}</h3>
+      <div className="overflow-hidden rounded-xl" ref={emblaRef}>
+        <div className="flex">
+          {testimonials.map((item, i) => (
+            <div key={i} className="flex-[0_0_100%] min-w-0">
+              <div className="bg-card rounded-xl p-5 border shadow-sm mx-1">
+                <p className="text-sm text-foreground italic mb-3">{item.text}</p>
+                <p className="text-xs text-muted-foreground font-medium">{item.author}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center gap-1.5 mt-3">
+        {testimonials.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => emblaApi?.scrollTo(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === selectedIndex ? "bg-primary" : "bg-border"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const HomeBottomSections = () => {
   const [searchSubmitted, setSearchSubmitted] = useState(false);
@@ -114,23 +166,7 @@ const HomeBottomSections = () => {
         </AnimatePresence>
       </div>
 
-      <div>
-        <h3 className="font-bold text-base mb-3">{t("home.volunteersSay")}</h3>
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="bg-card rounded-xl p-5 border shadow-sm"
-        >
-          <p className="text-sm text-foreground italic mb-3">{t("home.testimonial")}</p>
-          <p className="text-xs text-muted-foreground font-medium">{t("home.testimonialAuthor")}</p>
-        </motion.div>
-        <div className="flex justify-center gap-1.5 mt-3">
-          <span className="w-2 h-2 rounded-full bg-primary" />
-          <span className="w-2 h-2 rounded-full bg-border" />
-          <span className="w-2 h-2 rounded-full bg-border" />
-        </div>
-      </div>
+      <TestimonialCarousel />
 
       <div>
         <h3 className="font-bold text-base mb-3">{t("home.whyVolunteer")}</h3>

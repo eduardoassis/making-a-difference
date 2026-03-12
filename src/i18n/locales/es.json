@@ -36,6 +36,10 @@
     "volunteersSay": "Lo que dicen los voluntarios",
     "testimonial": "\"El voluntariado cambió mi vida. He conocido personas increíbles y aprendí mucho sobre la resiliencia.\"",
     "testimonialAuthor": "— María, voluntaria Buddy, Ámsterdam",
+    "testimonial2": "\"Empecé como compañero de idioma y ahora coordino un equipo entero. El apoyo de la organización es increíble.\"",
+    "testimonialAuthor2": "— Ahmed, Coach de idiomas, Róterdam",
+    "testimonial3": "\"Cada semana ayudo con las compras para refugiados mayores. Es algo pequeño pero significa mucho para ellos — y para mí.\"",
+    "testimonialAuthor3": "— Sophie, Voluntaria de compras, Utrecht",
     "whyVolunteer": "¿Por qué ser voluntario con nosotros?",
     "makeImpact": "Genera impacto",
     "expandSkills": "Amplía habilidades",
@@ -176,7 +180,8 @@
     "languageHelp": "Ayuda con idioma",
     "admin": "Administración",
     "sports": "Deportes",
-    "mapPreview": "Vista previa del mapa — oportunidades de voluntariado cerca de ti"
+    "mapPreview": "Vista previa del mapa — oportunidades de voluntariado cerca de ti",
+    "postalError": "Introduce un código postal neerlandés válido (ej. 1011 AB)"
   },
   "notFound": {
     "title": "404",

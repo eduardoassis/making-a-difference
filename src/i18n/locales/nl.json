@@ -36,6 +36,10 @@
     "volunteersSay": "Wat vrijwilligers zeggen",
     "testimonial": "\"Vrijwilligerswerk heeft mijn leven veranderd. Ik heb ongelooflijke mensen ontmoet en zoveel geleerd over veerkracht.\"",
     "testimonialAuthor": "— Maria, Buddy-vrijwilliger, Amsterdam",
+    "testimonial2": "\"Ik begon als taalmaatje en nu coördineer ik een heel team. De ondersteuning van de organisatie is geweldig.\"",
+    "testimonialAuthor2": "— Ahmed, Taalcoach, Rotterdam",
+    "testimonial3": "\"Elke week help ik met boodschappen voor oudere vluchtelingen. Het is iets kleins maar het betekent zoveel voor hen — en voor mij.\"",
+    "testimonialAuthor3": "— Sophie, Boodschappenvrijwilliger, Utrecht",
     "whyVolunteer": "Waarom vrijwilliger worden?",
     "makeImpact": "Maak impact",
     "expandSkills": "Ontwikkel vaardigheden",
@@ -176,7 +180,8 @@
     "languageHelp": "Taalhulp",
     "admin": "Administratie",
     "sports": "Sport",
-    "mapPreview": "Kaartvoorbeeld — vrijwilligerskansen bij jou in de buurt"
+    "mapPreview": "Kaartvoorbeeld — vrijwilligerskansen bij jou in de buurt",
+    "postalError": "Vul een geldige Nederlandse postcode in (bijv. 1011 AB)"
   },
   "notFound": {
     "title": "404",

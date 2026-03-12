@@ -36,6 +36,10 @@
     "volunteersSay": "Ce que disent les bénévoles",
     "testimonial": "\"Le bénévolat a changé ma vie. J'ai rencontré des personnes incroyables et appris beaucoup sur la résilience.\"",
     "testimonialAuthor": "— Maria, bénévole parrain, Amsterdam",
+    "testimonial2": "\"J'ai commencé comme partenaire linguistique et maintenant je coordonne toute une équipe. Le soutien de l'organisation est incroyable.\"",
+    "testimonialAuthor2": "— Ahmed, Coach linguistique, Rotterdam",
+    "testimonial3": "\"Chaque semaine, j'aide à faire les courses pour les réfugiés âgés. C'est peu de chose mais ça signifie beaucoup pour eux — et pour moi.\"",
+    "testimonialAuthor3": "— Sophie, Bénévole courses, Utrecht",
     "whyVolunteer": "Pourquoi devenir bénévole ?",
     "makeImpact": "Créez un impact",
     "expandSkills": "Développez vos compétences",
@@ -176,7 +180,8 @@
     "languageHelp": "Aide linguistique",
     "admin": "Administration",
     "sports": "Sport",
-    "mapPreview": "Aperçu carte — opportunités de bénévolat près de chez vous"
+    "mapPreview": "Aperçu carte — opportunités de bénévolat près de chez vous",
+    "postalError": "Veuillez entrer un code postal néerlandais valide (ex. 1011 AB)"
   },
   "notFound": {
     "title": "404",
