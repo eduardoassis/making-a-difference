@@ -36,7 +36,7 @@ const HeroSection = () => {
         to="/signup"
         className="block w-full py-4 rounded-xl bg-primary text-primary-foreground text-center font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
       >
-        Sign Up to Volunteer
+        I want to help
       </Link>
 
       {/* Secondary CTAs */}
