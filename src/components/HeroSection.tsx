@@ -34,7 +34,6 @@ const HeroSection = () => {
             {t("hero.title")}
           </h1>
         </div>
-        </h1>
       </motion.div>
 
       <Link
