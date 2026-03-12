@@ -66,10 +66,11 @@ const Signup = () => {
                 exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.2 }}
               >
-                {step === 0 && <StepExpertise />}
-                {step === 1 && <StepAvailability />}
-                {step === 2 && <StepLanguages />}
-                {step === 3 && <StepLocation />}
+                {step === 0 && <StepContact />}
+                {step === 1 && <StepExpertise />}
+                {step === 2 && <StepAvailability />}
+                {step === 3 && <StepLanguages />}
+                {step === 4 && <StepLocation />}
               </motion.div>
             </AnimatePresence>
 
