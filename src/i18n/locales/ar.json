@@ -44,7 +44,18 @@
     "contactUs": "أسئلة؟ تواصل معنا",
     "phone": "هاتف",
     "email": "بريد إلكتروني",
-    "chat": "محادثة"
+    "chat": "محادثة",
+    "opp": {
+      "legalTitle": "مساعدة قانونية لإجراءات اللجوء",
+      "buddyTitle": "رفيق لعائلة جديدة",
+      "dutchTitle": "دروس هولندية للمبتدئين",
+      "groceryTitle": "مساعدة بقالة لكبار السن",
+      "youthTitle": "برنامج إرشاد الشباب",
+      "resultsFound": "{{count}} فرص وجدت بالقرب من {{postal}}",
+      "urgent": "عاجل",
+      "slotsAvailable": "{{count}} أماكن متاحة",
+      "viewAll": "← عرض جميع الفرص"
+    }
   },
   "whatWeDo": {
     "title": "ماذا نفعل؟",

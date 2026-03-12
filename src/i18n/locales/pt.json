@@ -44,7 +44,18 @@
     "contactUs": "Dúvidas? Fale conosco",
     "phone": "Telefone",
     "email": "E-mail",
-    "chat": "Chat"
+    "chat": "Chat",
+    "opp": {
+      "legalTitle": "Assistência jurídica para procedimentos de asilo",
+      "buddyTitle": "Amigo para nova família",
+      "dutchTitle": "Aulas de holandês para iniciantes",
+      "groceryTitle": "Ajuda com compras para idosos",
+      "youthTitle": "Programa de mentoria juvenil",
+      "resultsFound": "{{count}} oportunidades encontradas perto de {{postal}}",
+      "urgent": "Urgente",
+      "slotsAvailable": "{{count}} vagas disponíveis",
+      "viewAll": "Ver todas as oportunidades →"
+    }
   },
   "whatWeDo": {
     "title": "O que fazemos?",
