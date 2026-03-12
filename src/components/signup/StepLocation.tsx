@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Search } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import FakeMap from "../FakeMap";
 
 const StepLocation = () => {
   const { t } = useTranslation();
@@ -103,60 +104,15 @@ const StepLocation = () => {
         </div>
       </div>
 
-      {/* Fake Map Preview */}
-      <div className="relative h-48 rounded-xl overflow-hidden bg-muted/50 border">
-        {/* Map Grid Lines */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="h-full w-full" style={{
-            backgroundImage: `
-              linear-gradient(to right, hsl(var(--primary)) 1px, transparent 1px),
-              linear-gradient(to bottom, hsl(var(--primary)) 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
-        
-        {/* Water/Canals */}
-        <div className="absolute top-4 left-8 right-16 h-3 bg-primary/20 rounded-full transform rotate-12" />
-        <div className="absolute bottom-8 left-4 w-3 h-20 bg-primary/20 rounded-full transform -rotate-6" />
-        
-        {/* Parks/Green Areas */}
-        <div className="absolute bottom-4 right-8 w-16 h-12 bg-secondary/50 rounded-xl" />
-        
-        {/* Streets */}
-        <div className="absolute top-0 left-1/3 w-1 h-full bg-background/80" />
-        <div className="absolute top-1/2 left-0 w-full h-1 bg-background/80" />
-        
-        {/* Opportunity Pins */}
-        <div className="absolute top-12 left-20">
-          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg">
-            <div className="w-4 h-4 bg-primary-foreground rounded-sm" />
-          </div>
-          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
-        </div>
-        
-        <div className="absolute bottom-16 right-20">
-          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg">
-            <div className="w-4 h-4 bg-primary-foreground rounded-sm" />
-          </div>
-          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
-        </div>
-        
-        <div className="absolute top-20 right-12">
-          <div className="w-8 h-8 bg-destructive rounded-full flex items-center justify-center shadow-lg">
-            <div className="w-4 h-4 bg-destructive-foreground rounded-sm" />
-          </div>
-          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-destructive rotate-45" />
-        </div>
-        
-        {/* Map Label */}
-        <div className="absolute bottom-2 left-2 bg-background/90 backdrop-blur-sm rounded-lg px-3 py-1.5 shadow-sm">
-          <p className="text-[10px] font-semibold text-foreground flex items-center gap-1">
-            <MapPin className="w-3 h-3 text-primary" />
-            {postalCode || "1011 AB"} • 3 {t("home.opp.locations")}
-          </p>
-        </div>
-      </div>
+      {/* Leaflet Map Preview */}
+      <FakeMap
+        className="h-48"
+        pins={[
+          { lat: 52.3676, lng: 4.9041, label: t("stepLocation.legalAid") },
+          { lat: 52.3784, lng: 4.8900, label: t("stepLocation.buddy") },
+          { lat: 52.3600, lng: 4.9300, label: t("stepLocation.languageHelp") },
+        ]}
+      />
     </div>
   );
 };
