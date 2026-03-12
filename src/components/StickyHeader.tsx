@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.png";
 
-const languages = ["NL", "EN", "ES", "AR", "UA"];
+const languages = ["NL", "EN", "FR", "PT", "ES", "AR", "UA"];
 
 const StickyHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
