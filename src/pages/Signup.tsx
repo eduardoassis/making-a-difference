@@ -45,7 +45,7 @@ const Signup = () => {
                 </Link>
               )}
               <span className="text-sm text-muted-foreground font-medium">
-                {t("signup.stepOf", { current: step + 1, total: 4 })}
+                {t("signup.stepOf", { current: step + 1, total: 5 })}
               </span>
             </div>
 
