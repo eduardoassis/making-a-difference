@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Phone, Mail, MessageCircle, Star, Lightbulb, Users, HeartHandshake, MapPin, Clock, Scale, GraduationCap, ShoppingCart, Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useTranslation } from "react-i18next";
 
 const HomeBottomSections = () => {
   const { t } = useTranslation();
