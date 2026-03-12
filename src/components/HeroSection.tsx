@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Heart, Users, Scale, HandHelping } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-image.png";
-import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
   const { t } = useTranslation();
