@@ -119,8 +119,86 @@ const HomeBottomSections = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="mt-4 space-y-3"
+              className="mt-4 space-y-4"
             >
+              {/* Fake Map Preview */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="relative h-48 rounded-xl overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border"
+              >
+                {/* Map Grid Lines */}
+                <div className="absolute inset-0 opacity-30">
+                  <div className="h-full w-full" style={{
+                    backgroundImage: `
+                      linear-gradient(to right, #0d9488 1px, transparent 1px),
+                      linear-gradient(to bottom, #0d9488 1px, transparent 1px)
+                    `,
+                    backgroundSize: '40px 40px'
+                  }} />
+                </div>
+                
+                {/* Water/Canals */}
+                <div className="absolute top-4 left-8 right-16 h-3 bg-cyan-200/60 rounded-full transform rotate-12" />
+                <div className="absolute bottom-8 left-4 w-3 h-20 bg-cyan-200/60 rounded-full transform -rotate-6" />
+                <div className="absolute top-12 right-12 w-2 h-16 bg-cyan-200/60 rounded-full transform rotate-45" />
+                
+                {/* Parks/Green Areas */}
+                <div className="absolute bottom-4 right-8 w-16 h-12 bg-emerald-200/50 rounded-xl" />
+                <div className="absolute top-8 left-20 w-10 h-8 bg-emerald-200/50 rounded-lg" />
+                
+                {/* Streets */}
+                <div className="absolute top-0 left-1/3 w-1 h-full bg-white/60" />
+                <div className="absolute top-1/2 left-0 w-full h-1 bg-white/60" />
+                <div className="absolute top-1/4 left-1/4 w-20 h-0.5 bg-white/50 transform rotate-45" />
+                
+                {/* Opportunity Pins */}
+                <div className="absolute top-16 left-24">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform cursor-pointer">
+                    <Scale className="w-4 h-4 text-primary-foreground" />
+                  </div>
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
+                </div>
+                
+                <div className="absolute bottom-20 left-12">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform cursor-pointer">
+                    <Heart className="w-4 h-4 text-primary-foreground" />
+                  </div>
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
+                </div>
+                
+                <div className="absolute top-24 right-20">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform cursor-pointer">
+                    <GraduationCap className="w-4 h-4 text-primary-foreground" />
+                  </div>
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
+                </div>
+                
+                <div className="absolute bottom-12 right-16">
+                  <div className="w-8 h-8 bg-destructive rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform cursor-pointer">
+                    <ShoppingCart className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-destructive rotate-45" />
+                  <span className="absolute -top-2 -right-1 w-4 h-4 bg-destructive text-white text-[10px] font-bold rounded-full flex items-center justify-center">!</span>
+                </div>
+                
+                <div className="absolute top-8 right-8">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform cursor-pointer">
+                    <Users className="w-4 h-4 text-primary-foreground" />
+                  </div>
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
+                </div>
+                
+                {/* Map Label */}
+                <div className="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 shadow-sm">
+                  <p className="text-[10px] font-semibold text-foreground flex items-center gap-1">
+                    <MapPin className="w-3 h-3 text-primary" />
+                    Amsterdam • {mockOpportunities.length} {t("home.opp.locations")}
+                  </p>
+                </div>
+              </motion.div>
+
               <p className="text-xs text-muted-foreground font-medium">
                 {t("home.opp.resultsFound", { count: mockOpportunities.length, postal: postalCode || "1011 AB" })}
               </p>
