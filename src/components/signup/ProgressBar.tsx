@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface ProgressBarProps {
   step: number;
@@ -6,38 +7,25 @@ interface ProgressBarProps {
 }
 
 const ProgressBar = ({ step, totalSteps }: ProgressBarProps) => {
+  const { t } = useTranslation();
   const percentage = Math.round(((step + 1) / totalSteps) * 100);
 
   return (
-    <div className="mb-2">
-      <div className="flex justify-between items-center mb-1.5">
-        <span className="text-xs font-semibold text-primary">{percentage}%</span>
+    <div className="mb-1">
+      <div className="flex justify-between items-center mb-1">
+        <span className="text-[10px] font-bold text-primary tracking-wide">
+          {percentage}% {t("signup.xp.complete")}
+        </span>
+        <span className="text-[10px] text-muted-foreground">
+          {step + 1}/{totalSteps}
+        </span>
       </div>
-      <div className="h-2.5 bg-muted rounded-full overflow-hidden relative">
+      <div className="h-1.5 bg-muted rounded-full overflow-hidden">
         <motion.div
-          className="h-full rounded-full"
-          style={{
-            background: "linear-gradient(90deg, hsl(var(--primary)), hsl(35, 95%, 58%), hsl(var(--primary)))",
-            backgroundSize: "200% 100%",
-          }}
+          className="h-full rounded-full bg-primary"
           initial={{ width: 0 }}
-          animate={{
-            width: `${percentage}%`,
-            backgroundPosition: ["0% 0%", "100% 0%"],
-          }}
-          transition={{
-            width: { duration: 0.5, ease: "easeOut" },
-            backgroundPosition: { duration: 2, repeat: Infinity, ease: "linear" },
-          }}
-        />
-        {/* Shimmer effect */}
-        <motion.div
-          className="absolute top-0 h-full w-8 rounded-full"
-          style={{
-            background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
-          }}
-          animate={{ left: ["-2rem", `${percentage}%`] }}
-          transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
+          animate={{ width: `${percentage}%` }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         />
       </div>
     </div>
