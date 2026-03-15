@@ -100,6 +100,24 @@
     "backToHome": "Back to Home",
     "stepComplete": "Step complete!",
     "badgesEarned": "Badges earned",
+    "xp": {
+      "levelUp": "LEVEL UP!",
+      "perStep": "for each step",
+      "complete": "complete",
+      "level1": "Newcomer",
+      "level2": "Explorer",
+      "level3": "Achiever",
+      "level4": "Champion",
+      "level5": "Hero"
+    },
+    "mascot": {
+      "welcome": "Hey there! Let's build your volunteer profile together! 🤝",
+      "skills": "Awesome skills! You're going to make a real difference! ✨",
+      "halfway": "Halfway there! You're on fire! Keep going! 🔥",
+      "languages": "So multilingual! That's a superpower here! 🦸",
+      "finish": "Last one! You're about to become a volunteer hero! 🏆",
+      "celebrate": "WOW! You crushed it! Welcome aboard! 🚀🎉"
+    },
     "motivation": {
       "step0": "Welcome! Let's get you started 🚀",
       "step1": "Great start! Now show us your skills",
