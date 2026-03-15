@@ -100,6 +100,24 @@
     "backToHome": "Voltar ao início",
     "stepComplete": "Etapa concluída!",
     "badgesEarned": "Badges conquistados",
+    "xp": {
+      "levelUp": "SUBIU DE NÍVEL!",
+      "perStep": "por cada etapa",
+      "complete": "completo",
+      "level1": "Novato",
+      "level2": "Explorador",
+      "level3": "Realizador",
+      "level4": "Campeão",
+      "level5": "Herói"
+    },
+    "mascot": {
+      "welcome": "Olá! Vamos criar seu perfil de voluntário juntos! 🤝",
+      "skills": "Habilidades incríveis! Você vai fazer a diferença! ✨",
+      "halfway": "Na metade! Você está arrasando! Continue! 🔥",
+      "languages": "Tão multilíngue! Isso é um superpoder aqui! 🦸",
+      "finish": "Última etapa! Você está prestes a se tornar um herói! 🏆",
+      "celebrate": "UAU! Você arrasou! Bem-vindo a bordo! 🚀🎉"
+    },
     "motivation": {
       "step0": "Bem-vindo! Vamos começar 🚀",
       "step1": "Ótimo começo! Agora mostre suas habilidades",

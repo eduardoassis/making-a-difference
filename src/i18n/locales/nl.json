@@ -100,6 +100,24 @@
     "backToHome": "Terug naar Home",
     "stepComplete": "Stap voltooid!",
     "badgesEarned": "Verdiende badges",
+    "xp": {
+      "levelUp": "LEVEL OMHOOG!",
+      "perStep": "per stap",
+      "complete": "voltooid",
+      "level1": "Nieuwkomer",
+      "level2": "Ontdekker",
+      "level3": "Bereiker",
+      "level4": "Kampioen",
+      "level5": "Held"
+    },
+    "mascot": {
+      "welcome": "Hallo! Laten we samen je vrijwilligersprofiel opbouwen! 🤝",
+      "skills": "Geweldige vaardigheden! Je gaat echt het verschil maken! ✨",
+      "halfway": "Halverwege! Je bent on fire! Ga zo door! 🔥",
+      "languages": "Zo meertalig! Dat is hier een superkracht! 🦸",
+      "finish": "Laatste stap! Je wordt bijna een vrijwilligersheld! 🏆",
+      "celebrate": "WOW! Je hebt het gehaald! Welkom aan boord! 🚀🎉"
+    },
     "motivation": {
       "step0": "Welkom! Laten we beginnen 🚀",
       "step1": "Goed begin! Laat nu je vaardigheden zien",
