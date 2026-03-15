@@ -80,11 +80,21 @@
     "socialDesc": "Mentor programme & community activities",
     "emergencyTitle": "Emergency Help",
     "emergencyDesc": "Shelter, food & urgent needs",
-    "volunteerHere": "Volunteer here →"
+    "volunteerHere": "Volunteer here →",
+    "casesHelped": "cases helped",
+    "learnersSupported": "learners supported",
+    "mentorships": "mentorships active",
+    "peopleHelped": "people helped",
+    "imInterested": "I'm interested",
+    "interested": "Interested! ✨"
   },
   "moreInfo": {
     "back": "Back",
     "title": "More Information",
+    "read": "read",
+    "sections": "sections",
+    "helpful": "Was this helpful?",
+    "thanksFeedback": "Thanks for your feedback!",
     "howVolunteeringWorks": "How volunteering works",
     "howVolunteeringWorksContent": "Sign up online, we review your profile, then we match you with a local team. You'll get an introduction and training before starting. The whole process typically takes 2–3 weeks.",
     "screeningProcess": "Screening process",
