@@ -12,10 +12,18 @@
     "whatWeDo": "What do we do?",
     "moreInfo": "More information",
     "findRole": "Find Your Role",
+    "tapToExplore": "Tap a role to learn more",
+    "signUpForThis": "Sign up for this",
     "howItWorks": "How it works",
     "step1": "Tell us about yourself",
     "step2": "We match you",
-    "step3": "Start making impact"
+    "step3": "Start making impact",
+    "roleDesc": {
+      "legal": "Help with asylum procedures, legal documents, and navigating the system.",
+      "social": "Build connections through social activities, events, and community building.",
+      "buddy": "Become a buddy — guide a newcomer through daily life and integration.",
+      "occasional": "Help when you can with groceries, transport, or one-time events."
+    }
   },
   "roles": {
     "legal": "Legal",
