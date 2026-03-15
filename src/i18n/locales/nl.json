@@ -12,10 +12,18 @@
     "whatWeDo": "Wat doen wij?",
     "moreInfo": "Meer informatie",
     "findRole": "Vind jouw rol",
+    "tapToExplore": "Tik op een rol om meer te weten",
+    "signUpForThis": "Hiervoor aanmelden",
     "howItWorks": "Hoe werkt het",
     "step1": "Vertel ons over jezelf",
     "step2": "Wij matchen je",
-    "step3": "Begin met impact maken"
+    "step3": "Begin met impact maken",
+    "roleDesc": {
+      "legal": "Help met asielprocedures, juridische documenten en systeemnavigatie.",
+      "social": "Bouw verbindingen op via sociale activiteiten, evenementen en community building.",
+      "buddy": "Word een buddy — begeleid een nieuwkomer door het dagelijks leven en integratie.",
+      "occasional": "Help wanneer je kunt met boodschappen, vervoer of eenmalige evenementen."
+    }
   },
   "roles": {
     "legal": "Juridisch",
