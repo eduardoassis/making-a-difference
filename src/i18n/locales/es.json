@@ -12,10 +12,18 @@
     "whatWeDo": "¿Qué hacemos?",
     "moreInfo": "Más información",
     "findRole": "Encuentra tu rol",
+    "tapToExplore": "Toca un rol para saber más",
+    "signUpForThis": "Inscribirme para esto",
     "howItWorks": "Cómo funciona",
     "step1": "Cuéntanos sobre ti",
     "step2": "Te emparejamos",
-    "step3": "Empieza a generar impacto"
+    "step3": "Empieza a generar impacto",
+    "roleDesc": {
+      "legal": "Ayuda con procedimientos de asilo, documentos legales y navegación del sistema.",
+      "social": "Construye conexiones a través de actividades sociales, eventos y construcción de comunidad.",
+      "buddy": "Sé un amigo — guía a un recién llegado en la vida diaria e integración.",
+      "occasional": "Ayuda cuando puedas con compras, transporte o eventos puntuales."
+    }
   },
   "roles": {
     "legal": "Legal",
