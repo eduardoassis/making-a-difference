@@ -98,6 +98,15 @@
     "allSet": "Vous êtes prêt !",
     "allSetDesc": "Nous examinerons votre profil et vous associerons à la bonne équipe.",
     "backToHome": "Retour à l'accueil",
+    "stepComplete": "Étape terminée !",
+    "badgesEarned": "Badges obtenus",
+    "motivation": {
+      "step0": "Bienvenue ! C'est parti 🚀",
+      "step1": "Bon début ! Montrez-nous vos compétences",
+      "step2": "À mi-chemin ! Vous êtes formidable 💪",
+      "step3": "Presque fini ! Encore un peu",
+      "step4": "Dernière étape ! Vous êtes presque volontaire 🏁"
+    },
     "contact": "Contact",
     "expertise": "Expertise",
     "availability": "Disponibilité",
