@@ -14,7 +14,7 @@ const MASCOT_STATES = [
   { emoji: "🏃", pose: "run", key: "signup.mascot.finish" },
 ];
 
-const poseAnimations: Record<string, object> = {
+const poseAnimations: Record<string, any> = {
   wave: { rotate: [0, -15, 15, -10, 10, 0], transition: { duration: 0.8, delay: 0.2 } },
   excited: { scale: [1, 1.3, 1, 1.2, 1], transition: { duration: 0.6, delay: 0.2 } },
   dance: { y: [0, -8, 0, -5, 0], rotate: [0, -5, 5, -3, 0], transition: { duration: 0.8, delay: 0.2 } },
