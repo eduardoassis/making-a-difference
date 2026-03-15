@@ -80,11 +80,21 @@
     "socialDesc": "Programa de mentoría y actividades comunitarias",
     "emergencyTitle": "Ayuda de emergencia",
     "emergencyDesc": "Refugio, comida y necesidades urgentes",
-    "volunteerHere": "Ser voluntario aquí →"
+    "volunteerHere": "Ser voluntario aquí →",
+    "casesHelped": "casos ayudados",
+    "learnersSupported": "estudiantes apoyados",
+    "mentorships": "mentorías activas",
+    "peopleHelped": "personas ayudadas",
+    "imInterested": "Me interesa",
+    "interested": "¡Interesado! ✨"
   },
   "moreInfo": {
     "back": "Volver",
     "title": "Más Información",
+    "read": "leído",
+    "sections": "secciones",
+    "helpful": "¿Fue útil?",
+    "thanksFeedback": "¡Gracias por tu opinión!",
     "howVolunteeringWorks": "Cómo funciona el voluntariado",
     "howVolunteeringWorksContent": "Regístrate en línea, revisamos tu perfil y te emparejamos con un equipo local. Recibirás una introducción y capacitación antes de comenzar. Todo el proceso suele tomar 2-3 semanas.",
     "screeningProcess": "Proceso de selección",

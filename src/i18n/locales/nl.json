@@ -80,11 +80,21 @@
     "socialDesc": "Mentorprogramma & gemeenschapsactiviteiten",
     "emergencyTitle": "Noodhulp",
     "emergencyDesc": "Opvang, voedsel & dringende behoeften",
-    "volunteerHere": "Hier vrijwilligen →"
+    "volunteerHere": "Hier vrijwilligen →",
+    "casesHelped": "zaken geholpen",
+    "learnersSupported": "leerlingen ondersteund",
+    "mentorships": "mentorschappen actief",
+    "peopleHelped": "mensen geholpen",
+    "imInterested": "Ik ben geïnteresseerd",
+    "interested": "Geïnteresseerd! ✨"
   },
   "moreInfo": {
     "back": "Terug",
     "title": "Meer Informatie",
+    "read": "gelezen",
+    "sections": "secties",
+    "helpful": "Was dit nuttig?",
+    "thanksFeedback": "Bedankt voor je feedback!",
     "howVolunteeringWorks": "Hoe vrijwilligerswerk werkt",
     "howVolunteeringWorksContent": "Meld je online aan, wij beoordelen je profiel en matchen je met een lokaal team. Je krijgt een introductie en training voordat je begint. Het hele proces duurt doorgaans 2-3 weken.",
     "screeningProcess": "Screeningsproces",

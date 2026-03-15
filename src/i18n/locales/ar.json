@@ -80,11 +80,21 @@
     "socialDesc": "برنامج إرشاد وأنشطة مجتمعية",
     "emergencyTitle": "مساعدة طارئة",
     "emergencyDesc": "مأوى وطعام واحتياجات عاجلة",
-    "volunteerHere": "← تطوع هنا"
+    "volunteerHere": "← تطوع هنا",
+    "casesHelped": "حالات تم مساعدتها",
+    "learnersSupported": "متعلمين تم دعمهم",
+    "mentorships": "إرشادات نشطة",
+    "peopleHelped": "أشخاص تم مساعدتهم",
+    "imInterested": "أنا مهتم",
+    "interested": "✨ !مهتم"
   },
   "moreInfo": {
     "back": "رجوع",
     "title": "مزيد من المعلومات",
+    "read": "مقروء",
+    "sections": "أقسام",
+    "helpful": "هل كان هذا مفيداً؟",
+    "thanksFeedback": "شكراً على ملاحظاتك!",
     "howVolunteeringWorks": "كيف يعمل التطوع",
     "howVolunteeringWorksContent": "سجّل عبر الإنترنت، نراجع ملفك الشخصي، ثم نطابقك مع فريق محلي. ستحصل على مقدمة وتدريب قبل البدء. تستغرق العملية عادةً 2-3 أسابيع.",
     "screeningProcess": "عملية الفحص",

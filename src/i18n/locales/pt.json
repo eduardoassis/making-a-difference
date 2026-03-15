@@ -12,10 +12,18 @@
     "whatWeDo": "O que fazemos?",
     "moreInfo": "Mais informações",
     "findRole": "Encontre seu papel",
+    "tapToExplore": "Toque em um papel para saber mais",
+    "signUpForThis": "Cadastrar-se para isso",
     "howItWorks": "Como funciona",
     "step1": "Conte-nos sobre você",
     "step2": "Nós fazemos o match",
-    "step3": "Comece a fazer a diferença"
+    "step3": "Comece a fazer a diferença",
+    "roleDesc": {
+      "legal": "Ajude com procedimentos de asilo, documentos legais e orientação no sistema.",
+      "social": "Construa conexões através de atividades sociais, eventos e construção de comunidade.",
+      "buddy": "Seja um amigo — guie um recém-chegado pela vida diária e integração.",
+      "occasional": "Ajude quando puder com compras, transporte ou eventos pontuais."
+    }
   },
   "roles": {
     "legal": "Jurídico",
@@ -72,11 +80,21 @@
     "socialDesc": "Programa de mentoria e atividades comunitárias",
     "emergencyTitle": "Ajuda de emergência",
     "emergencyDesc": "Abrigo, alimentação e necessidades urgentes",
-    "volunteerHere": "Seja voluntário aqui →"
+    "volunteerHere": "Seja voluntário aqui →",
+    "casesHelped": "casos ajudados",
+    "learnersSupported": "alunos apoiados",
+    "mentorships": "mentorias ativas",
+    "peopleHelped": "pessoas ajudadas",
+    "imInterested": "Tenho interesse",
+    "interested": "Interessado! ✨"
   },
   "moreInfo": {
     "back": "Voltar",
     "title": "Mais Informações",
+    "read": "lido",
+    "sections": "seções",
+    "helpful": "Isso foi útil?",
+    "thanksFeedback": "Obrigado pelo feedback!",
     "howVolunteeringWorks": "Como funciona o voluntariado",
     "howVolunteeringWorksContent": "Cadastre-se online, analisamos seu perfil e fazemos o match com uma equipe local. Você receberá uma introdução e treinamento antes de começar. Todo o processo leva geralmente 2 a 3 semanas.",
     "screeningProcess": "Processo de seleção",

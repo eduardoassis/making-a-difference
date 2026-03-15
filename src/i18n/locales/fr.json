@@ -80,11 +80,21 @@
     "socialDesc": "Programme de mentorat et activités communautaires",
     "emergencyTitle": "Aide d'urgence",
     "emergencyDesc": "Hébergement, nourriture et besoins urgents",
-    "volunteerHere": "Devenir bénévole ici →"
+    "volunteerHere": "Devenir bénévole ici →",
+    "casesHelped": "cas aidés",
+    "learnersSupported": "apprenants soutenus",
+    "mentorships": "mentorats actifs",
+    "peopleHelped": "personnes aidées",
+    "imInterested": "Ça m'intéresse",
+    "interested": "Intéressé ! ✨"
   },
   "moreInfo": {
     "back": "Retour",
     "title": "Plus d'Informations",
+    "read": "lu",
+    "sections": "sections",
+    "helpful": "C'était utile ?",
+    "thanksFeedback": "Merci pour votre retour !",
     "howVolunteeringWorks": "Comment fonctionne le bénévolat",
     "howVolunteeringWorksContent": "Inscrivez-vous en ligne, nous examinons votre profil, puis nous vous associons à une équipe locale. Vous recevrez une introduction et une formation avant de commencer. Le processus prend généralement 2 à 3 semaines.",
     "screeningProcess": "Processus de sélection",
