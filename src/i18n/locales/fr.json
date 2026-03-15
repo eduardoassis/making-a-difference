@@ -12,10 +12,18 @@
     "whatWeDo": "Que faisons-nous ?",
     "moreInfo": "Plus d'informations",
     "findRole": "Trouvez votre rôle",
+    "tapToExplore": "Touchez un rôle pour en savoir plus",
+    "signUpForThis": "S'inscrire pour ça",
     "howItWorks": "Comment ça marche",
     "step1": "Parlez-nous de vous",
     "step2": "Nous vous associons",
-    "step3": "Commencez à avoir un impact"
+    "step3": "Commencez à avoir un impact",
+    "roleDesc": {
+      "legal": "Aidez avec les procédures d'asile, les documents légaux et la navigation dans le système.",
+      "social": "Créez des liens à travers des activités sociales, des événements et la construction communautaire.",
+      "buddy": "Devenez un compagnon — guidez un nouveau venu dans la vie quotidienne et l'intégration.",
+      "occasional": "Aidez quand vous pouvez avec les courses, le transport ou les événements ponctuels."
+    }
   },
   "roles": {
     "legal": "Juridique",
@@ -72,11 +80,21 @@
     "socialDesc": "Programme de mentorat et activités communautaires",
     "emergencyTitle": "Aide d'urgence",
     "emergencyDesc": "Hébergement, nourriture et besoins urgents",
-    "volunteerHere": "Devenir bénévole ici →"
+    "volunteerHere": "Devenir bénévole ici →",
+    "casesHelped": "cas aidés",
+    "learnersSupported": "apprenants soutenus",
+    "mentorships": "mentorats actifs",
+    "peopleHelped": "personnes aidées",
+    "imInterested": "Ça m'intéresse",
+    "interested": "Intéressé ! ✨"
   },
   "moreInfo": {
     "back": "Retour",
     "title": "Plus d'Informations",
+    "read": "lu",
+    "sections": "sections",
+    "helpful": "C'était utile ?",
+    "thanksFeedback": "Merci pour votre retour !",
     "howVolunteeringWorks": "Comment fonctionne le bénévolat",
     "howVolunteeringWorksContent": "Inscrivez-vous en ligne, nous examinons votre profil, puis nous vous associons à une équipe locale. Vous recevrez une introduction et une formation avant de commencer. Le processus prend généralement 2 à 3 semaines.",
     "screeningProcess": "Processus de sélection",

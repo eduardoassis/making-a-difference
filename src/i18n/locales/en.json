@@ -12,10 +12,18 @@
     "whatWeDo": "What do we do?",
     "moreInfo": "More information",
     "findRole": "Find Your Role",
+    "tapToExplore": "Tap a role to learn more",
+    "signUpForThis": "Sign up for this",
     "howItWorks": "How it works",
     "step1": "Tell us about yourself",
     "step2": "We match you",
-    "step3": "Start making impact"
+    "step3": "Start making impact",
+    "roleDesc": {
+      "legal": "Help with asylum procedures, legal documents, and navigating the system.",
+      "social": "Build connections through social activities, events, and community building.",
+      "buddy": "Become a buddy — guide a newcomer through daily life and integration.",
+      "occasional": "Help when you can with groceries, transport, or one-time events."
+    }
   },
   "roles": {
     "legal": "Legal",
@@ -72,11 +80,21 @@
     "socialDesc": "Mentor programme & community activities",
     "emergencyTitle": "Emergency Help",
     "emergencyDesc": "Shelter, food & urgent needs",
-    "volunteerHere": "Volunteer here →"
+    "volunteerHere": "Volunteer here →",
+    "casesHelped": "cases helped",
+    "learnersSupported": "learners supported",
+    "mentorships": "mentorships active",
+    "peopleHelped": "people helped",
+    "imInterested": "I'm interested",
+    "interested": "Interested! ✨"
   },
   "moreInfo": {
     "back": "Back",
     "title": "More Information",
+    "read": "read",
+    "sections": "sections",
+    "helpful": "Was this helpful?",
+    "thanksFeedback": "Thanks for your feedback!",
     "howVolunteeringWorks": "How volunteering works",
     "howVolunteeringWorksContent": "Sign up online, we review your profile, then we match you with a local team. You'll get an introduction and training before starting. The whole process typically takes 2–3 weeks.",
     "screeningProcess": "Screening process",
