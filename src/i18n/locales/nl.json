@@ -98,6 +98,15 @@
     "allSet": "Je bent helemaal klaar!",
     "allSetDesc": "We beoordelen je profiel en koppelen je aan het juiste team.",
     "backToHome": "Terug naar Home",
+    "stepComplete": "Stap voltooid!",
+    "badgesEarned": "Verdiende badges",
+    "motivation": {
+      "step0": "Welkom! Laten we beginnen 🚀",
+      "step1": "Goed begin! Laat nu je vaardigheden zien",
+      "step2": "Halverwege! Je doet het geweldig 💪",
+      "step3": "Bijna klaar! Nog even doorgaan",
+      "step4": "Laatste stap! Je bent bijna vrijwilliger 🏁"
+    },
     "contact": "Contactgegevens",
     "expertise": "Expertise",
     "availability": "Beschikbaarheid",

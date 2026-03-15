@@ -98,6 +98,15 @@
     "allSet": "¡Todo listo!",
     "allSetDesc": "Revisaremos tu perfil y te emparejaremos con el equipo adecuado.",
     "backToHome": "Volver al inicio",
+    "stepComplete": "¡Paso completado!",
+    "badgesEarned": "Insignias ganadas",
+    "motivation": {
+      "step0": "¡Bienvenido! Vamos a empezar 🚀",
+      "step1": "¡Buen comienzo! Muéstranos tus habilidades",
+      "step2": "¡A mitad de camino! Lo estás haciendo genial 💪",
+      "step3": "¡Casi listo! Solo un poco más",
+      "step4": "¡Último paso! Ya casi eres voluntario 🏁"
+    },
     "contact": "Contacto",
     "expertise": "Experiencia",
     "availability": "Disponibilidad",
