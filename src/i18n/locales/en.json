@@ -98,6 +98,15 @@
     "allSet": "You're all set!",
     "allSetDesc": "We'll review your profile and match you with the right team.",
     "backToHome": "Back to Home",
+    "stepComplete": "Step complete!",
+    "badgesEarned": "Badges earned",
+    "motivation": {
+      "step0": "Welcome! Let's get you started 🚀",
+      "step1": "Great start! Now show us your skills",
+      "step2": "Halfway there! You're doing amazing 💪",
+      "step3": "Almost done! Just a bit more",
+      "step4": "Last step! You're nearly a volunteer 🏁"
+    },
     "contact": "Contact",
     "expertise": "Expertise",
     "availability": "Availability",
